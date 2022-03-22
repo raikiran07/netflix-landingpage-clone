@@ -103,6 +103,9 @@ section{
     margin-top:7em;
     
 }
+.hero-container{
+    border:1px solid white;
+}
 
 .hero-container h1{
     text-align:center;
@@ -124,7 +127,7 @@ section{
 }
 
 .user-email{
-    /* border:1px solid black; */
+    border:1px solid white;
     width:70%;
     /*changing the margin*/
     margin:0 auto;
@@ -152,6 +155,11 @@ section{
     color:#fff;
     font-size:25px;
     border:none;
+}
+
+#heading h1{
+    width:50%;
+    margin:0 auto;
 }
 
 .line{
@@ -607,7 +615,7 @@ footer h3{
     }
     .email{
         padding:15px 25px;
-        width:450px;
+        width:100%;
         border-radius:0;
         outline:none;
         border:1px solid black;
@@ -626,7 +634,36 @@ footer h3{
     .footer-container{
         grid-template-columns:repeat(3,1fr);
     }
+    #heading h1{
+        /* font-size:2.5em; */
+        width:80%;
+    }
 
 
+    
+}
+
+@media only screen and (max-width:650px){
+    #heading h1{
+        font-size:2.5em;
+        width:80%;
+    }
+    .hero-container p{
+        margin-top:1.5rem;
+        font-size:1em;
+    }
+    .user-email{
+        /* border:1px solid white; */
+        width:90%;
+        /*changing the margin*/
+        margin:0 auto;
+       
+        padding-bottom:5em;
+        /* margin-bottom:0; */
+    }
+    #info-text{
+        font-size:2rem;
+    }
+   
     
 }
