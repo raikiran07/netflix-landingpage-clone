@@ -187,12 +187,17 @@ section{
     font-weight:600;
 }
 .container .text{
-    width:70%;
+    /* width:70%; */
+    flex:3;
 }
 
 .text p{
     font-size:2rem;
     margin-top:1.8rem;
+}
+.image-container{
+    flex:2;
+    overflow:hidden;
 }
 
 .image-container .image{
@@ -204,16 +209,17 @@ section{
 #movie{
     position:relative;
     z-index:10;
+    
 }
 
 .movie-image{
     width:100%;
     height:100%;
-    max-width:355px;
-    max-height:205px;
+    max-width:600px;
+    
     position:absolute;
-    top:21%;
-    left:13%;
+    top:0;
+    left:0;
     z-index:-1;
     padding:0;
     /* border:1px solid blue; */
@@ -248,10 +254,14 @@ section{
     padding:15px 10px;
    
     background-color:#000;
-    bottom:5%;
+    /* bottom:5%; */
     z-index:10;
-    left:14%;
+    /* left:14%; */
     border-radius:13px;
+    left:50%;
+    transform:translateX(-50%);
+    bottom:10%;
+    
 
 }
 .extra-info p{
@@ -263,26 +273,54 @@ section{
 }
 #video-container{
     position:relative;
-    z-index:15;
+    z-index:10;
+    /* z-index:10; */
+    
+    
+}
+#saif-image{
+    width:100%;
+    max-width:600px;
     overflow:hidden;
-   
 }
 
-.video{
+.movie-video{
+    width:100%;
+    max-width:600px;
+    height:100%;
+    max-height:80%;
+    position:absolute;
+    top:10%;
+    left:0;
+    z-index:-1;
+    background-image:url("./assets/monophy.gif");
+    background-size:cover;
+    overflow:hidden;
+}
+
+
+
+/* .video{
     position:absolute;
     z-index:-1;
     top:10%;
     left:20%;
-    /* border:1px solid white; */
+    /* border:1px solid white; 
     
     width:100%;
-    max-width:300px;
+    max-width:600px;
     overflow:hidden;
 }
 .video video{
     width:100%;
     height:100%;
-}
+    
+    
+} */
+
+
+
+
 .question-container{
     width:100%;
     border-top:1px solid grey;
@@ -472,10 +510,7 @@ footer h3{
 
     }
 
-    .container .text{
-        width:70%;
-        margin-left:2.5rem;
-    }
+    
 
     .text p{
         font-size:26px;
